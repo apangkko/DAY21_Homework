@@ -67,3 +67,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+body.dark {
+  background-color: #213547;
+  color: #f9f9f9;
+  transition: .2 all ease-in-out;
+}
+
+#drinkingWater .drinkingWater__txt {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+#drinkingWater #weight{
+  padding: .5rem 1rem;
+}
+
+#themeSwitcher {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+#themeSwitcher #themes {
+  padding: .5rem 1rem;
+}

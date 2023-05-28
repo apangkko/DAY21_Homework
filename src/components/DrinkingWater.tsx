@@ -10,14 +10,13 @@ const DrinkingWater = () => {
   const [Result, setResult] = useState<number>(0);
 
   return (
-    <>
-      <h1>
+    <div id="drinkingWater">
+      <div className="drinkingWater__txt">
         ควรดื่มน้ำวันละเท่าไหร่
         <br />
         {Result} มล.
-      </h1>
-      <form>
-        <input
+      </div>
+        <input id="weight"
           {...register("weight", {
             onChange: (e) => {
               setResult(Math.round(e.target.value * 2.2 * (30 / 2)));
@@ -25,8 +24,7 @@ const DrinkingWater = () => {
           })}
           placeholder="น้ำหนักของคุณ (กิโลกรัม)"
         />
-      </form>
-    </>
+    </div>
   );
 
   //     const [Weight, setWeight] = useState<number>(0);
